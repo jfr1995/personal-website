@@ -21,7 +21,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("img/bg3.jpg") no-repeat center fixed;
+  background: black; /*url("img/bg3.jpg") no-repeat center fixed;*/
   background-size: cover;
 }
 a {
@@ -39,9 +39,13 @@ img {
 
 section {
   padding: 6rem;
-  background-color: #f8e4cb;
-  border-radius: 10px;
-  margin: 10rem 1rem;
+  background-color: black;
+  margin: 20rem 0rem;
+  color: #f8e4cb;
+}
+
+section:nth-child(odd) {
+  background: #f8e4cb;
 }
 
 /*
@@ -69,6 +73,10 @@ section {
   font-weight: 300;
   position: relative;
   margin-bottom: 1rem;
+}
+
+#projects {
+  color: #f8e4cb;
 }
 
 .section-heading h1::before {
@@ -231,6 +239,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #f8e4cb;
 }
 .about-heading {
   text-align: center;
@@ -238,7 +247,6 @@ li {
   line-height: 0;
   margin-bottom: 6rem;
   margin-top: 6rem;
-  color: black;
 }
 
 .about-heading h1 {
@@ -253,11 +261,11 @@ li {
 .profile-img {
   flex: 1;
   margin-right: 5rem;
-  border-radius: 10px;
+
+  border: 5px solid #f8e4cb;
 }
 
 .about-details {
-  color: black;
   flex: 1;
 }
 
@@ -308,6 +316,7 @@ li {
   width: 10rem;
   height: 10rem;
   border: 3px solid black;
+  border-radius: 50%;
   background-color: F8E4CB;
   margin-bottom: 2rem;
   display: flex;
@@ -326,7 +335,7 @@ li {
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
-
+  color: #f8e4cb;
   padding: 5px;
 }
 
@@ -336,12 +345,14 @@ li {
 
 .project-img {
   flex: 1;
-  color: black;
+  color: #f8e4cb;
+  border-radius: 5px;
+  background-color: #f8e4cb;
 }
 
 .project-description {
   flex: 1;
-  color: black;
+
   font-size: 1.5rem;
   text-align: left;
 }
@@ -352,6 +363,7 @@ li {
   font-weight: 500;
   text-align: center;
   margin-bottom: 3rem;
+  color: #f8e4cb !important;
 }
 
 .project-description .cta {
@@ -396,48 +408,9 @@ li {
   position: relative;
 }
 
-.up {
-  position: absolute;
-  width: 5rem;
-  height: 5rem;
-  background-color: #eee;
-  top: -2.5rem;
-  border-radius: 100%;
-  right: 5rem;
-  display: flex;
-  animation: pulse 2s infinite;
-  cursor: pointer;
-}
-
-.up i {
-  color: #221e3f;
-  font-size: 2rem;
-  margin: auto;
-}
-
 .copyright p {
   font-size: 1.4rem;
 }
-
-/*
-start animations 
-*/
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(48, 39, 30, 0.99);
-  }
-  70% {
-    box-shadow: 0 0 0 2rem rgba(48, 39, 30, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(48, 39, 30, 0);
-  }
-}
-
-/*
-end animations 
-*/
 
 /*
 start media queries
@@ -445,7 +418,7 @@ start media queries
 
 @media screen and (max-width: 850px) {
   body {
-    background: url("img/bg3.jpg") no-repeat center fixed;
+    background: black;
     background-size: cover;
   }
   .landing-text h1 {
